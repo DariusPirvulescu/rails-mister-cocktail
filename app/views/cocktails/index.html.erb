@@ -1,0 +1,9 @@
+
+<% @cocktails.each do |c| %>
+  <div class="cards">
+  <div class="card-category" style="background-color: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+    <%= c.name %> <%= link_to "view", cocktail_path(c.id) %>
+  </div>
+<% end %>
+
+<%= link_to 'create new cocktail', cocktails_new_path %>

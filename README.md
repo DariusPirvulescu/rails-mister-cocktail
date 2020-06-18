@@ -37,3 +37,20 @@ A dose is the amount needed for each ingredient in a cocktail
 a cocktail, an ingredient and has a description.
 
 rails g model Dose description:string cocktail:references ingredient:references
+
+###### controller
+A user can see the list of cocktails
+GET "cocktails"
+index
+
+A user can see the details of a given cocktail, with the dose needed for each ingredient
+GET "cocktails/42"
+show
+
+A user can create a new cocktail
+GET "cocktails/new"
+POST "cocktails"
+new
+create
+
+rails generate controller index show new create
