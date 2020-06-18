@@ -15,8 +15,13 @@
 
 puts 'creating cocktails...'
 
-Cocktail.create(name: "Gin-Tonic")
-Cocktail.create(name: "Gin-Vodka-Orange")
-Cocktail.create(name: "Moskva")
+# Cocktail.create(name: "Gin-Tonic")
+# Cocktail.create(name: "Gin-Vodka-Orange")
+# Cocktail.create(name: "Moskva")
+
+Ingredient.create(name: "Tequila")
+Ingredient.create(name: "Rom")
+Ingredient.create(name: "Orange-juice")
+Ingredient.create(name: "Tomato-juice")
 
 puts 'finished'
